@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">Virtual Travel Assistant</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Your Nearest Places</string>
+	<string name="title_menu_activity">Virtual Travel Assistant</string>
+</resources>

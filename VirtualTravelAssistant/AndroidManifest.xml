@@ -1,0 +1,66 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.projectgroup7.virtualtravelassistant"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <!-- Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+     <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>   
+ 
+    
+    <!-- Network State Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <!-- Access Location -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <!--  Add Google Map Library -->
+        <uses-library android:name="com.google.android.maps" />
+    
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+          
+         
+            </intent-filter>
+        </activity>
+        
+		
+        <!-- Attractions Activity -->
+        <activity android:name=".AttractionsActivity" android:label="@string/app_name" >
+		</activity>
+        
+        <!-- SinglePlaceActivity -->
+        <activity android:name=".SinglePlaceActivity" android:label="Place Details">
+            <category android:name="android.intent.category.DEFAULT"/>
+		</activity>
+        
+        <!-- PlacesMapActivity -->
+        <activity android:name=".PlacesMapActivity" android:label="Closest Attractions Map View">
+		</activity>
+		
+        <!-- Web View - Official Website -->
+        <activity
+            android:name=".WebViewActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+		
+        
+        
+    </application>
+    
+    
+
+</manifest>
